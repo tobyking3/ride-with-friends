@@ -1,0 +1,96 @@
+curl -X GET "https://www.strava.com/api/v3/athletes/32165584?access_token=3af7d472af78af522b64b555eedcfca696c1e25b" -H "accept: application/json"
+
+{   
+    "id":32165584,
+    "username":null,
+    "resource_state":2,
+    "firstname":"Toby",
+    "lastname":"King",
+    "city":"Brighton",
+    "state":"England",
+    "country":"United Kingdom",
+    "sex":"M",
+    "premium":false,
+    "summit":false,
+    "created_at":"2018-06-26T11:36:34Z",
+    "updated_at":"2018-10-22T15:51:12Z",
+    "badge_type_id":0,
+    "profile_medium":"https://graph.facebook.com/10156646157789379/picture?height=256\u0026width=256",
+    "profile":"https://graph.facebook.com/10156646157789379/picture?height=256\u0026width=256",
+    "friend":null,
+    "follower":null,
+    "email":"toby.king@hotmail.co.uk"
+},
+
+curl -X GET "https://www.strava.com/api/v3/athletes/32165584/stats?access_token=3af7d472af78af522b64b555eedcfca696c1e25b" -H "accept: application/json"
+
+{
+    "biggest_ride_distance":41179.5,
+    "biggest_climb_elevation_gain":459.74,
+    "recent_ride_totals":{
+        "count":0,
+        "distance":0.0,
+        "moving_time":0,
+        "elapsed_time":0,
+        "elevation_gain":0.0,
+        "achievement_count":0
+    },
+    "recent_run_totals":{
+        "count":0,
+        "distance":0.0,
+        "moving_time":0,
+        "elapsed_time":0,
+        "elevation_gain":0.0,
+        "achievement_count":0
+    },
+    "recent_swim_totals":{
+        "count":0,
+        "distance":0.0,
+        "moving_time":0,
+        "elapsed_time":0,
+        "elevation_gain":0.0,
+        "achievement_count":0
+    },
+    "ytd_ride_totals":{
+        "count":4,
+        "distance":142214,
+        "moving_time":29814,
+        "elapsed_time":52009,
+        "elevation_gain":7536
+    },
+    "ytd_run_totals":{
+        "count":0,
+        "distance":0,
+        "moving_time":0,
+        "elapsed_time":0,
+        "elevation_gain":0
+    },
+    "ytd_swim_totals":{
+        "count":0,
+        "distance":0,
+        "moving_time":0,
+        "elapsed_time":0,
+        "elevation_gain":0
+    },
+    "all_ride_totals":{
+        "count":4,
+        "distance":142214,
+        "moving_time":29814,
+        "elapsed_time":52009,
+        "elevation_gain":7536
+    },
+    "all_run_totals":{
+        "count":0,
+        "distance":0,
+        "moving_time":0,
+        "elapsed_time":0,
+        "elevation_gain":0
+    },
+    "all_swim_totals":{
+        "count":0,
+        "distance":0,
+        "moving_time":0,
+        "elapsed_time":0,
+        "elevation_gain":0
+    }
+}
