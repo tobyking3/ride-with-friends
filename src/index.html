@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RWF</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button>Login</button>
+    <p id="dataContainer"></p>
+
+    <script type="text/javascript">
+        var data = null;
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener("readystatechange", function () {
+          if (this.readyState === 4) {
+            console.log(this.responseText);
+            document.getElementById('dataContainer').textContent = this.responseText;
+          }
+        });
+
+        xhr.open("GET", "https://www.strava.com/api/v3/athlete?access_token=****************************");
+        xhr.setRequestHeader("cache-control", "no-cache");
+        xhr.setRequestHeader("Postman-Token", "*******************");
+
+        xhr.send(data);
+
+    </script>
+
+</body>
+</html>
