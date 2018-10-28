@@ -21,9 +21,9 @@
           }
         });
 
-        xhr.open("GET", "https://www.strava.com/api/v3/athlete?access_token=****************************");
+        xhr.open("GET", "https://www.strava.com/oauth/authorize?client_id=29188&redirect_uri=localhost&response_type=code&scope=read_all");
         xhr.setRequestHeader("cache-control", "no-cache");
-        xhr.setRequestHeader("Postman-Token", "*******************");
+        xhr.setRequestHeader("Postman-Token", "6f8d3beb-7b28-4749-b4ac-55b7c33d37da");
 
         xhr.send(data);
 
